@@ -1,0 +1,19 @@
+--- rott-1.0/rott/develop.h.orig	Tue Jan  7 07:31:51 2003
++++ rott-1.0/rott/develop.h	Sat Jan 11 14:28:05 2003
+@@ -40,9 +40,15 @@
+ #define LOWCOST  0
+ 
+ // Make sure only one of the following are on at one time
+-#define SHAREWARE   1
++#ifndef SHAREWARE
++#define SHAREWARE   0
++#endif
++#ifndef SUPERROTT
+ #define SUPERROTT   0
++#endif
++#ifndef SITELICENSE
+ #define SITELICENSE 0
++#endif
+ 
+ // cute little dopefish thing, only works with special patch?
+ #define DOPEFISH 0
