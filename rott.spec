@@ -14,6 +14,7 @@ Release:	1
 License:	GPL (program only)
 Group:		Applications/Games
 Source0:	http://icculus.org/rott/releases/%{name}-%{version}.tar.gz
+# Source0-md5:	c1c6cbecf00f2229cf2e0053334dcfc1
 Patch0:		%{name}-version.patch
 URL:		http://icculus.org/rott/
 BuildRequires:	SDL_mixer-devel
