@@ -16,7 +16,6 @@ Group:		Applications/Games
 Source0:	http://icculus.org/rott/releases/%{name}-%{version}.tar.gz
 Patch0:		%{name}-version.patch
 URL:		http://icculus.org/rott/
-BuildRequires:	SDL-devel
 BuildRequires:	SDL_mixer-devel
 Provides:	rott(%{product})
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
