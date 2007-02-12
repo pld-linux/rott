@@ -7,7 +7,7 @@
 #
 %{!?product:%define	product	SHAREWARE}
 Summary:	Rise of the Triad game
-Summary(pl):	Gra Rise of the Triad
+Summary(pl.UTF-8):   Gra Rise of the Triad
 Name:		rott
 Version:	1.0
 Release:	1
@@ -24,7 +24,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Rise of the Triad game.
 
-%description -l pl
+%description -l pl.UTF-8
 Gra Rise of the Triad.
 
 %prep
