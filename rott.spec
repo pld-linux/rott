@@ -9,12 +9,12 @@
 Summary:	Rise of the Triad game
 Summary(pl.UTF-8):	Gra Rise of the Triad
 Name:		rott
-Version:	1.0
+Version:	1.1
 Release:	1
 License:	GPL (program only)
 Group:		Applications/Games
 Source0:	http://icculus.org/rott/releases/%{name}-%{version}.tar.gz
-# Source0-md5:	c1c6cbecf00f2229cf2e0053334dcfc1
+# Source0-md5:	3e4940c364ecfae86375b7b1a77860d9
 Patch0:		%{name}-version.patch
 URL:		http://icculus.org/rott/
 BuildRequires:	SDL_mixer-devel
@@ -34,7 +34,8 @@ Gra Rise of the Triad.
 %build
 cd rott
 %{__make} \
-	EXTRACFLAGS="%{rpmcflags} -DUSE_EXECINFO=1 -D%{product}=1"
+	CC="%{__cc}" \
+	CFLAGS="%{rpmcflags} -D%{product}=1"
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -47,5 +48,5 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README readme.txt rott/13todo.txt
+%doc README doc/*.txt
 %attr(755,root,root) %{_bindir}/*
