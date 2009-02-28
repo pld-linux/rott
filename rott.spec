@@ -12,7 +12,7 @@ Name:		rott
 Version:	1.1
 Release:	1
 License:	GPL (program only)
-Group:		Applications/Games
+Group:		X11/Applications/Games
 Source0:	http://icculus.org/rott/releases/%{name}-%{version}.tar.gz
 # Source0-md5:	3e4940c364ecfae86375b7b1a77860d9
 Patch0:		%{name}-version.patch
